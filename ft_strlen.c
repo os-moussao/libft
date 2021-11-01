@@ -6,9 +6,11 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 17:23:19 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/01 17:25:38 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/01 17:39:54 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
