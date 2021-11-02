@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 11:53:13 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/02 19:23:46 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/02 19:31:58 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *str, int c);
+char	*ft_strrchr(const char *str, int c);
 
 #endif
