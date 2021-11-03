@@ -6,16 +6,16 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:18:50 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/03 11:24:57 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/03 11:30:23 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_w_space(char c)
+static int	is_w_space(char c)
 {
 	return (c == 32 || (c >= 9 && c <= 13));
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	res;
 	int	sign;
