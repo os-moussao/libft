@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 11:53:13 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/02 20:24:12 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/02 21:52:20 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char	*ft_strrchr(const char *str, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *h, const char *n, size_t len);
 
 #endif
