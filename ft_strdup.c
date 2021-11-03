@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:40:20 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/03 11:49:43 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/03 15:12:32 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,12 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*dup;
-	size_t	i;
 	size_t	len;
 
-	len = 0;
-	while (s1[len])
-		len++;
-	dup = malloc(len + 1);
+	len = ft_strlen(s1) + 1;
+	dup = malloc(len);
 	if (!dup)
 		return (NULL);
-	i = -1;
-	while (s1[++i])
-		dup[i] = s1[i];
-	dup[i] = 0;
+	ft_strlcpy(dup, s1, len);
 	return (dup);
 }
