@@ -2,6 +2,7 @@ mmain.c
 a.out
 compile.sh
 push.sh
+re.sh
 TESTING
 libft.a
 *.o
