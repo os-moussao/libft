@@ -3,3 +3,5 @@ a.out
 compile.sh
 push.sh
 TESTING
+libft.a
+*.o
