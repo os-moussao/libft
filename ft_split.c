@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:12:21 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/03 16:46:36 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/04 19:57:52 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ char	**ft_split(char const *s, char c)
 	char	**array;
 	int		words_count;
 
+	if (!s)
+		return (NULL);
 	words_count = count_words(s, c);
 	array = malloc((words_count + 1) * sizeof(char *));
 	if (!array)

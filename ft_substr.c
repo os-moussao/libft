@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:25:20 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/04 17:11:57 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/04 19:56:54 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	slen;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	slen = ft_strlen(s);
 	if (start > slen)
 	{

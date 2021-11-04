@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 21:18:16 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/03 21:19:33 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/04 19:49:27 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
+	if (!str)
+		return ;
 	while (*str)
 		write(fd, str++, 1);
 }
