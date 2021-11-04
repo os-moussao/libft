@@ -7,13 +7,20 @@ SRCS := ft_atoi.c    ft_isalpha.c ft_memchr.c  ft_memset.c  ft_strlcat.c ft_strn
 		ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c		\
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
+SRCSB := $(SRCS) ft_lstnew.c
+
 OBJS := $(SRCS:.c=.o)
+
+OBJSB := $(SRCSB:.c=.o)
 
 CFLAGS := -Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
 
 all: $(NAME)
+
+bonus: $(OBJSB)
+	ar -crs $(NAME) $^
 
 $(NAME): $(OBJS)
 	ar -crs $@ $^
@@ -22,7 +29,7 @@ $(NAME): $(OBJS)
 	gcc $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJSB)
 
 fclean: clean
 	rm -f $(NAME)
