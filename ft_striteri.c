@@ -6,7 +6,7 @@
 /*   By: omoussao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 20:29:26 by omoussao          #+#    #+#             */
-/*   Updated: 2021/11/03 20:33:47 by omoussao         ###   ########.fr       */
+/*   Updated: 2021/11/04 19:47:59 by omoussao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
+	if (!s)
+		return ;
 	i = -1;
 	while (s[++i])
 		f(i, s + i);
